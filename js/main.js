@@ -112,7 +112,7 @@ function productFn() {
   document.addEventListener('scroll', function () {
     let scrollTop = window.scrollY;
 
-    if ((windowH / 2 + scrollTop) >= productTop) { // product 섹션이 반쯤 보이면 작동
+    if ((windowH * 0.5 + scrollTop) >= productTop) { // product 섹션이 반쯤 보이면 작동
       product.classList.add('on');
       esg.classList.add('on');
     } else {
@@ -158,7 +158,7 @@ function esgFn() {
   document.addEventListener('scroll', function () {
     let scrollTop = window.scrollY;
 
-    if ((windowH / 2 + scrollTop) >= esgTop) { // esg 섹션이 반쯤 보이면 작동
+    if ((windowH * 0.66 + scrollTop) >= esgTop) { // esg 섹션이 화면 1/3쯤 보이면 작동
       esgImg.classList.add('on');
     } else {
       esgImg.classList.remove('on');
