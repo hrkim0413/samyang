@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>삼양식품 랜딩페이지</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/reset.css" type="text/css">
+  <link rel="stylesheet" href="./css/font.css" type="text/css">
+  <link rel="stylesheet" href="./css/common.css" type="text/css">
+  <link rel="stylesheet" href="./css/main.css" type="text/css">
+</head>
+
+<body>
+  <div class="wrap">
+    <!-- header -->
+    <header class="header" id="header">
+      <div class="inner">
+        <h1 class="logo">
+          <a href="./index.html" title="메인 페이지로 이동">
+            <img src="./images/logo.png" alt="삼양식품 로고">
+          </a>
+        </h1>
+
+        <div class="right-box">
+          <nav class="nav">
+            <ul class="gnb">
+              <li>
+                <a href="#about" title="회사 소개 영역으로 이동">회사 소개</a>
+              </li>
+              <li>
+                <a href="#product" title="제품 소개 영역으로 이동">제품 소개</a>
+              </li>
+              <li>
+                <a href="#esg" title="ESG 영역으로 이동">ESG</a>
+              </li>
+              <li>
+                <a href="#global" title="글로벌 진출 영역으로 이동">글로벌 진출</a>
+              </li>
+              <li>
+                <a href="#notice" title="공지사항 영역으로 이동">공지사항</a>
+              </li>
+            </ul>
+          </nav>
+
+          <button class="search-btn" id="search-btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span class="blind">검색하기</span>
+          </button>
+        </div>
+      </div>
+
+      <form action="./search.php" name="form" method="post" class="search-box" id="search-box">
+        <fieldset>
+          <input type="search" id="nav-search" placeholder="검색어를 입력하세요.">
+          <label for="nav-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span class="blind">검색하기</span>
+          </label>
+        </fieldset>
+        <button type="button" class="close">
+          <i class="fa-solid fa-xmark"></i>
+          <span class="blind">검색창 닫기</span>
+        </button>
+      </form>
+    </header>
+
+    <!-- main -->
+    <main class="main">
+      <!-- visual -->
+      <section class="swiper con visual">
+        <h2 class="blind">메인 비쥬얼</h2>
+        <div class="swiper-wrapper">
+          <article class="swiper-slide" data-bg="black">
+            <a href="https://www.samyangfoods.com/kor/index.do" title="삼양식품 페이지로 이동(새창으로 열림)" target="_blank">
+              <img src="./images/visual_slide01.jpg" alt="라운드와 스퀘어의 만남을 통해 세상에 없던 가치를 전하다.">
+              <div class="txt-box">
+                <strong class="con-tag">
+                  Samyang Foods
+                </strong>
+                <h3 class="con-title">
+                  <span>라운드</span>와 <span>스퀘어</span>의 만남을 통해 <br>
+                  세상에 없던 가치를 전하다.
+                </h3>
+              </div>
+            </a>
+          </article>
+          <article class="swiper-slide" data-bg="white">
+            <a href="https://www.samyangfoods.com/kor/brand/samyangRamen.do" title="삼양라면 제품리스트 페이지로 이동(새창으로 열림)"
+              target="_blank">
+              <img src="./images/visual_slide02.jpg" alt="Since 1963 라면의 원조, 삼양라면">
+              <div class="txt-box">
+                <strong class="con-tag">
+                  Samyang
+                </strong>
+                <h3 class="con-title">
+                  Since <span>1963</span> <br>
+                  라면의 원조, <span>삼양라면</span>
+                </h3>
+              </div>
+            </a>
+          </article>
+          <article class="swiper-slide" data-bg="white">
+            <a href="https://www.samyangfoods.com/kor/publicity/embassador/index.do"
+              title="삼양식품 엠버서더 [삼양러버] 페이지로 이동(새창으로 열림)" target="_blank">
+              <img src="./images/visual_slide03.jpg" alt="소통하는 삼양식품 공식 엠버서더">
+              <div class="txt-box">
+                <strong class="con-tag">
+                  Samyang Lover
+                </strong>
+                <h3 class="con-title">
+                  <span>소통</span>하는 <br>
+                  삼양식품 <span>공식 엠버서더</span>
+                </h3>
+              </div>
+            </a>
+          </article>
+        </div>
+        <div class="pagination">
+          <span class="num now">00</span>
+          <span class="bar">
+            <span class="progress"></span>
+          </span>
+          <span class="num all">00</span>
+        </div>
+        <div class="swiper-button-arrow swiper-button-prev visual-button-prev"></div>
+        <div class="swiper-button-arrow swiper-button-next visual-button-next"></div>
+      </section>
+
+      <!-- about - 회사 소개 -->
+      <section class="con about" id="about">
+        <div class="inner scroll-fade">
+          <ul class="img-list">
+            <li class="on">
+              <img src="./images/about_img01.jpg" alt="국내 식품 산업에 큰 획을 긋다">
+            </li>
+            <li>
+              <img src="./images/about_img02.jpg" alt="국내 최초 라면 ‘삼양라면’ 출시">
+            </li>
+            <li>
+              <img src="./images/about_img03.jpg" alt="글로벌 K-Food 열풍">
+            </li>
+            <li>
+              <img src="./images/about_img04.jpg" alt="최고의 제품과 서비스 제공">
+            </li>
+          </ul>
+          <ul class="txt-list">
+            <li class="on">
+              <h2 class="con-title">국내 식품 산업에 큰 획을 긋다</h2>
+              <p class="con-desc">
+                <strong class="con-tag">라면에 대한 열정과 신념</strong>
+                1961년 창업한 삼양식품은 ‘정직과 신용’의 정신으로 한국 식품산업의 새로운 영역을 개척했습니다. <br>
+                1960년대 식량난 극복과 1970년대 식생활 개선에 앞장섰으며, 현재는 한국의 맛과 문화를 전 세계에 전하는 <span>글로벌 종합식품기업</span>으로 성장하고 있습니다.
+              </p>
+              <a href="https://www.samyangfoods.com/kor/information/company/index.do" title="삼양식품 회사소개 페이지로 이동(새창으로 열림)"
+                class="btn-more1" target="_blank"><span>더 알아보기</span></a>
+            </li>
+            <li>
+              <h2 class="con-title">국내 최초 라면 ‘삼양라면’ 출시</h2>
+              <p class="con-desc">
+                <strong class="con-tag">1963년 9월, 역사적인 첫 걸음</strong>
+                1960년대 식량난 속에서 故 전중윤 선대회장은 일본에서 기술을 도입해
+                1963년 9월 15일 국내 최초의 라면인 <span>삼양라면</span>을 출시했습니다. <br>
+                이후 라면은 제2의 주식으로 자리잡으며 한국의 새로운 식문화를 만들어갔습니다.
+              </p>
+              <a href="https://www.samyangfoods.com/kor/information/company/index.do" title="삼양식품 회사소개 페이지로 이동(새창으로 열림)"
+                class="btn-more1" target="_blank"><span>더 알아보기</span></a>
+            </li>
+            <li>
+              <h2 class="con-title">글로벌 K-Food 열풍</h2>
+              <p class="con-desc">
+                <strong class="con-tag">불닭 브랜드로 세계 시장을 사로잡다</strong>
+                1969년 베트남 첫 수출을 시작으로 현재 90여 개국에 제품을 수출하고 있습니다. <br>
+                특히 <span>불닭브랜드의 글로벌 인기</span>로 해외사업이 급격히 성장하며
+                삼양식품은 세계인의 입맛을 사로잡는 <span>K-Food 대표 기업</span>으로 자리매김하고 있습니다.
+              </p>
+              <a href="https://www.samyangfoods.com/kor/information/company/index.do" title="삼양식품 회사소개 페이지로 이동(새창으로 열림)"
+                class="btn-more1" target="_blank"><span>더 알아보기</span></a>
+            </li>
+            <li>
+              <h2 class="con-title">최고의 제품과 서비스 제공</h2>
+              <p class="con-desc">
+                <strong class="con-tag">신뢰할 수 있는 품질, 차별화된 연구</strong>
+                삼양식품은 <span>세계 최고 수준의 생산시설과 연구소</span>를 보유하고 있으며,
+                원재료 조달부터 생산, 품질 관리, 유통까지 완벽한 <span>수직 계열화 시스템</span>을 통해
+                글로벌 경쟁력을 강화하고 있습니다. <br>
+                앞으로도 계열사와의 협력을 통해 시너지를 창출하며 <span>글로벌 종합 식품 기업</span>으로 성장하겠습니다.
+              </p>
+              <a href="https://www.samyangfoods.com/kor/information/company/index.do" title="삼양식품 회사소개 페이지로 이동(새창으로 열림)"
+                class="btn-more1" target="_blank"><span>더 알아보기</span></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- product - 제품 소개 -->
+      <section class="con product" id="product">
+        <div class="inner">
+          <h2 class="con-title scroll-fade"><span>맛</span>으로 전하는 <span>즐거움</span></h2>
+          <p class="con-desc scroll-fade">대한민국을 넘어 전 세계가 사랑하는 삼양식품의 다양한 제품을 소개합니다.</p>
+          <ul class="tab-title scroll-fade">
+            <li class="on"><button>베스트셀러</button></li>
+            <li><button>신제품</button></li>
+          </ul>
+          <div class="tab-con scroll-fade">
+            <article class="swiper on">
+              <ul class="swiper-wrapper list">
+                <li class="swiper-slide">
+                  <a href="https://www.samyangfoods.com/kor/brand/view.do?recordCountPerPage=4&seq=530"
+                    title="삼양라면 상세페이지로 이동(새창으로 열림)" target="_blank">
+                    <div class="front">
+                      <img src="./images/product_best-img01.png" alt="삼양라면">
+                      <h3>삼양라면</h3>
+                      <p>깔끔한 감칠맛으로 대한민국을 사로잡다</p>
+                    </div>
+                    <div class="back">
+                      <img src="./images/product_best-img01_hover.jpg" alt="삼양라면 배너">
+                    </div>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="https://www.samyangfoods.com/kor/brand/view.do?recordCountPerPage=4&seq=53"
+                    title="불닭볶음면 상세페이지로 이동(새창으로 열림)" target="_blank">
+                    <div class="front">
+                      <img src="./images/product_best-img02.png" alt="불닭볶음면">
+                      <h3>불닭볶음면</h3>
+                      <p>K-SPICY의 아이콘 계속 끌리는 매운맛</p>
+                    </div>
+                    <div class="back">
+                      <img src="./images/product_best-img02_hover.jpg" alt="불닭볶음면 배너">
+                    </div>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="https://www.samyangfoods.com/kor/brand/view.do?recordCountPerPage=4&seq=43"
+                    title="짜짜로니 상세페이지로 이동(새창으로 열림)" target="_blank">
+                    <div class="front">
+                      <img src="./images/product_best-img03.png" alt="짜짜로니">
+                      <h3>짜짜로니</h3>
+                      <p>뭉침없이 부드럽게 비벼지는 액상소스만의 노하우</p>
+                    </div>
+                    <div class="back">
+                      <img src="./images/product_best-img03_hover.jpg" alt="짜짜로니 배너">
+                    </div>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="https://www.samyangfoods.com/kor/brand/view.do?recordCountPerPage=4&seq=590"
+                    title="불닭볶음탕면 상세페이지로 이동(새창으로 열림)" target="_blank">
+                    <div class="front">
+                      <img src="./images/product_best-img04.png" alt="불닭볶음탕면">
+                      <h3>불닭볶음탕면</h3>
+                      <p>마늘 풍미로 더욱 더 매콤해진 불닭볶음탕면</p>
+                    </div>
+                    <div class="back">
+                      <img src="./images/product_best-img04_hover.jpg" alt="불닭볶음탕면 배너">
+                    </div>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="https://www.samyangfoods.com/kor/brand/view.do?recordCountPerPage=4&seq=387"
+                    title="까르보불닭볶음면 상세페이지로 이동(새창으로 열림)" target="_blank">
+                    <div class="front">
+                      <img src="./images/product_best-img05.png" alt="까르보불닭볶음면">
+                      <h3>까르보불닭볶음면</h3>
+                      <p>부드러운 크림에 빠진 불닭!</p>
+                    </div>
+                    <div class="back">
+                      <img src="./images/product_best-img05_hover.jpg" alt="까르보불닭볶음면 배너">
+                    </div>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="https://www.samyangfoods.com/kor/brand/view.do?recordCountPerPage=4&seq=650"
+                    title="맵탱 흑후추소고기라면 상세페이지로 이동(새창으로 열림)" target="_blank">
+                    <div class="front">
+                      <img src="./images/product_best-img06.png" alt="맵탱 흑후추소고기라면">
+                      <h3>맵탱 흑후추소고기라면</h3>
+                      <p>맵콤한 국물이 필요한 순간</p>
+                    </div>
+                    <div class="back">
+                      <img src="./images/product_best-img06_hover.jpg" alt="맵탱 흑후추소고기라면 배너">
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <div class="swiper-button-arrow swiper-button-next product-button-next"></div>
+              <div class="swiper-button-arrow swiper-button-prev product-button-prev"></div>
+            </article>
+            <article class="swiper">
+              <ul class="swiper-wrapper list">
+                <li class="swiper-slide">
+                  <a href="https://www.samyangfoods.com/kor/brand/view.do?recordCountPerPage=4&seq=486"
+                    title="삼양라면 매운맛 상세페이지로 이동(새창으로 열림)" target="_blank">
+                    <div class="front">
+                      <img src="./images/product_new-img01.png" alt="삼양라면 매운맛">
+                      <h3>삼양라면 매운맛</h3>
+                      <p>얼큰한 감칠맛으로 대한민국을 사로잡다</p>
+                    </div>
+                    <div class="back">
+                      <img src="./images/product_new-img01_hover.jpg" alt="삼양라면 매운맛 배너">
+                    </div>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="https://www.samyangfoods.com/kor/brand/view.do?recordCountPerPage=4&seq=674"
+                    title="맵탱 쿨스파이시 비빔면 김치맛 상세페이지로 이동(새창으로 열림)" target="_blank">
+                    <div class="front">
+                      <img src="./images/product_new-img02.png" alt="맵탱 쿨스파이시 비빔면 김치맛">
+                      <h3>맵탱 쿨스파이시 비빔면 김치맛</h3>
+                      <p>입안 가득 화해지는 깔끔한 맛! 맵콤깔끔 비빔면</p>
+                    </div>
+                    <div class="back">
+                      <img src="./images/product_new-img02_hover.jpg" alt="맵탱 쿨스파이시 비빔면 김치맛 배너">
+                    </div>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="https://www.samyangfoods.com/kor/brand/view.do?recordCountPerPage=4&seq=676"
+                    title="탱글 청크토마토파스타 상세페이지로 이동(새창으로 열림)" target="_blank">
+                    <div class="front">
+                      <img src="./images/product_new-img03.png" alt="탱글 청크토마토파스타">
+                      <h3>탱글 청크토마토파스타</h3>
+                      <p>큼직한 토마토에 마늘과 양파로 풍미를 살린 깊고 진한 토마토 파스타</p>
+                    </div>
+                    <div class="back">
+                      <img src="./images/product_new-img03_hover.jpg" alt="탱글 청크토마토파스타 배너">
+                    </div>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="https://www.samyangfoods.com/kor/brand/view.do?recordCountPerPage=4&seq=677"
+                    title="탱글 머쉬룸크림파스타 상세페이지로 이동(새창으로 열림)" target="_blank">
+                    <div class="front">
+                      <img src="./images/product_new-img04.png" alt="탱글 머쉬룸크림파스타">
+                      <h3>탱글 머쉬룸크림파스타</h3>
+                      <p>양송이, 표고버섯과 트러플향을 더해 꾸덕하고 고소한 크림파스타</p>
+                    </div>
+                    <div class="back">
+                      <img src="./images/product_new-img04_hover.jpg" alt="탱글 머쉬룸크림파스타 배너">
+                    </div>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="https://www.samyangfoods.com/kor/brand/view.do?recordCountPerPage=4&seq=678"
+                    title="탱글 갈릭오일파스타 상세페이지로 이동(새창으로 열림)" target="_blank">
+                    <div class="front">
+                      <img src="./images/product_new-img05.png" alt="탱글 갈릭오일파스타">
+                      <h3>탱글 갈릭오일파스타</h3>
+                      <p>향긋한 마늘, 매콤한 레드페퍼로 감칠맛을 더한 오일파스타</p>
+                    </div>
+                    <div class="back">
+                      <img src="./images/product_new-img05_hover.jpg" alt="탱글 갈릭오일파스타 배너">
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <div class="swiper-button-arrow swiper-button-next product-button-next"></div>
+              <div class="swiper-button-arrow swiper-button-prev product-button-prev"></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- esg - esg -->
+      <section class="con esg" id="esg">
+        <div class="bg-img" id="bg-img"></div>
+        <div class="inner">
+          <div class="txt-box scroll-fade">
+            <strong class="con-tag">ESG</strong>
+            <h2 class="con-title">
+              <span>지속가능경영</span>을 통해 <br>
+              건강하고 즐거운 세상
+            </h2>
+            <a href="https://www.samyangfoods.com/kor/content/overview/index.do" title="삼양식품 ESG 페이지로 이동(새창으로 열림)"
+              class="btn-more2" target="_blank">더 알아보기</a>
+          </div>
+          <ul class="item-box scroll-fade">
+            <li>
+              <img src="./images/esg_img01.jpg" alt="ESG 전략체계">
+              <div class="txt">
+                <h3>ESG 전략체계</h3>
+                <p>세상을 건강하게 하는 자양분이 되는 기업</p>
+              </div>
+            </li>
+            <li>
+              <img src="./images/esg_img02.jpg" alt="환경경영">
+              <div class="txt">
+                <h3>환경경영</h3>
+                <p>저탄소·친환경 체계 구축</p>
+              </div>
+            </li>
+            <li>
+              <img src="./images/esg_img03.jpg" alt="사회적가치경영">
+              <div class="txt">
+                <h3>사회적가치경영</h3>
+                <p>지속가능한 안전하고 건강한 일터</p>
+              </div>
+            </li>
+            <li>
+              <img src="./images/esg_img04.jpg" alt="책임경영">
+              <div class="txt">
+                <h3>책임경영</h3>
+                <p>투명하고 공정한 거버넌스 체계를 구축</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- global - 글로벌 진출 -->
+      <section class="con global" id="global">
+        <ul class="ani-box">
+          <li class="ani-txt">Global Advancement Performance</li>
+          <li class="ani-txt">Global Advancement Performance</li>
+        </ul>
+        <div class="inner">
+          <div class="txt-box">
+            <h2 class="con-title scroll-fade">전 세계가 사랑하는 <span>삼양</span>의 맛</h2>
+            <p class="con-desc scroll-fade">
+              삼양식품은 1969년 국내 라면 최초로 해외 시장에 진출하며, 현재 <span>전 세계 90여 개국</span>에서 사랑받고 있습니다. <br>
+              불닭브랜드의 글로벌 인기를 기반으로 <span>해외 매출 80% 달성</span>이라는 성과를 이루었으며, <br>
+              월마트, 코스트코 등 글로벌 유통망을 통해 <span>한국 식품의 우수성</span>을 널리 알리고 있습니다.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- notice - 공지사항 & 유튜브 -->
+      <section class="con notice" id="notice">
+        <div class="inner">
+          <h2 class="con-title scroll-fade">공지사항</h2>
+          <article class="news scroll-fade">
+            <ul>
+              <li>
+                <a href="https://www.samyangfoods.com/kor/community/faq/list.do?searchCateCd=007001"
+                  title="'라면은 언제, 어디서, 어떻게 만들어 졌나요?' 공지사항으로 이동(새창으로 열림)" target="_blank">
+                  <h3>라면은 언제, 어디서, 어떻게 만들어 졌나요?</h3>
+                  <p class="desc">
+                    인스턴트 라면은 1958년 일본에서 개발되어 시판되었습니다.
+                    라면 유래에 대해서는 중국의 상용식인 '건면'에서 유래 되었다는 설과 일본에서 자체 개발했다는 두가지 설이 있습니다.
+                  </p>
+                  <p class="date">25.09.26</p>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.samyangfoods.com/kor/community/faq/list.do?searchCateCd=007001"
+                  title="'국내 최초 라면 삼양라면은 어떻게 만들어졌나요?' 공지사항으로 이동(새창으로 열림)" target="_blank">
+                  <h3>국내 최초 라면 '삼양라면'은 어떻게 만들어졌나요?</h3>
+                  <p class="desc">
+                    故 전중윤 명예회장님이 남대문 시장을 지나가던 중 사람들이 꿀꿀이 죽을 사먹기 위해 줄을 서 있는 것을 보았습니다.
+                    이를 안타깝게 생각한 명예회장님은 일본에서 보았던 편리하고 쉽게 먹을 수 있는 라면의 국내 생산을 꿈꾸게 되었고, 1963년 국내 최초의 라면을 개발하였습니다.
+                  </p>
+                  <p class="date">25.09.26</p>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.samyangfoods.com/kor/community/faq/list.do?searchCateCd=007002"
+                  title="'삼양식품은 어떤 제품을 생산하고 있나요?' 공지사항으로 이동(새창으로 열림)" target="_blank">
+                  <h3>삼양식품은 어떤 제품을 생산하고 있나요?</h3>
+                  <p class="desc">
+                    삼양식품은 1963년 국내 최초의 라면을 시작으로
+                    안전하고 영양이 풍부한 식품을 공급하기 위해 노력하고 있습니다.
+                    ​현재는 라면류뿐 아니라 스낵류, 소스류 등을 생산하며
+                    ‘정직’ 과 ‘신용’을 통해 소비자를 위한 제품 생산에 노력하는 종합식품기업입니다
+                  </p>
+                  <p class="date">25.09.25</p>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.samyangfoods.com/kor/community/faq/list.do?searchCateCd=007003"
+                  title="'사이트 이용시, 별도 회원가입을 해야하나요?' 공지사항으로 이동(새창으로 열림)" target="_blank">
+                  <h3>사이트 이용시, 별도 회원가입을 해야하나요?</h3>
+                  <p class="desc">
+                    삼양식품 사이트 내 에서는 별도 회원가입 없이 글쓰기 및 이벤트 참여 등이 가능합니다.
+                    단, 고객문의를 남겨주실 경우 답변에 필요한 개인정보(성함 / 휴대폰 / 이메일 등)를 수집할 수 있으니
+                    홈페이지 하단의 '개인정보처리방침' 내용을 참고 부탁드립니다.
+                  </p>
+                  <p class="date">25.09.22</p>
+                </a>
+              </li>
+            </ul>
+            <a href="https://www.samyangfoods.com/kor/community/faq/list.do" title="삼양식품 공지사항 페이지로 이동(새창으로 열림)"
+              class="btn-more2" target="_blank">더보기</a>
+          </article>
+          <article class="youtube scroll-fade">
+            <h2 class="blind">삼양식품 유튜브</h2>
+            <button class="item item1" data-yt="W6eOk2pLwC8">
+              <img src="./images/notice_img01.jpg" alt="유튜브 썸네일1">
+            </button>
+            <button class="item item2" data-yt="YjExYAiSg5w">
+              <img src="./images/notice_img02.jpg" alt="유튜브 썸네일2">
+            </button>
+          </article>
+          <div class="modal" id="modal">
+            <div class="content">
+              <iframe src="https://www.youtube.com/embed/" title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <button class="close">
+              <span class="blind">모달창 닫기</span>
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- top btn -->
+      <a href="#" title="위로 올라가기" class="top-btn" id="top-btn">TOP</a>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="inner">
+        <h2 class="logo">
+          <img src="./images/f-logo.png" alt="삼양식품">
+        </h2>
+        <address>
+          삼양식품(주) 서울특별시 성북구 오패산로3길 104(하월곡동) <br>
+          대표이사 : 김정수, 김동찬 | 사업자등록번호 : 102-81-05450 | 통신판매신고번호 : 2016-서울성북-0790 | 고객만족센터 : 080-940-3333(무료상담전화) | 대표전화 :
+          02-940-3000
+        </address>
+        <p>Copyright © Samyang Foods Inc. All Rights Reserved.</p>
+        <div class="family" id="family">
+          <button>패밀리몰</button>
+          <ul>
+            <li><a href="https://roundsquare.ai/" target="_blank" title="삼양라운드스퀘어 사이트로 이동(새창으로 열림)">삼양라운드스퀘어</a></li>
+            <li><a href="https://smartstore.naver.com/syfoodshop" target="_blank" title="삼양식품 공식몰 사이트로 이동(새창으로 열림)">삼양식품
+                공식몰</a></li>
+            <li><a href="https://samyangamerica.com" target="_blank" title="Samyang America 사이트로 이동(새창으로 열림)">Samyang
+                America</a></li>
+            <li><a href="https://samyangfoods.co.jp" target="_blank" title="Samyang Japan 사이트로 이동(새창으로 열림)">Samyang
+                Japan</a></li>
+            <li><a href="https://www.samyangroundhill.com/" target="_blank" title="삼양라운드힐 사이트로 이동(새창으로 열림)">삼양라운드힐</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="sns">
+          <li>
+            <a href="https://blog.naver.com/samyangfoods" title="삼양식품 블로그로 이동(새창으로 열림)" target="_blank">
+              <img src="./images/f_sns01.png" alt="블로그 아이콘">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/samyangfoods" title="삼양식품 페이스북으로 이동(새창으로 열림)" target="_blank">
+              <img src="./images/f_sns02.png" alt="페이스북 아이콘">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/samyangfoods/" title="삼양식품 인스타로 이동(새창으로 열림)" target="_blank">
+              <img src="./images/f_sns03.png" alt="인스타 아이콘">
+            </a>
+          </li>
+          <li>
+            <a href="https://x.com/samyangfoods" title="삼양식품 트위터로 이동(새창으로 열림)" target="_blank">
+              <img src="./images/f_sns04.png" alt="트위터 아이콘">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
