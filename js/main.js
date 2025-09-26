@@ -225,7 +225,7 @@ function fadeFn() {
     fadeItem.forEach(function (item) {
       let itemTop = window.pageYOffset + item.getBoundingClientRect().top; // scroll-fade의 위치값
 
-      if ((windowH / 2 + nowScroll) >= itemTop) { // scroll-fade의 위치값이 화면 반쯤 보이면 실행
+      if ((windowH * 0.66 + nowScroll) >= itemTop) { // scroll-fade의 위치값이 화면 1/3쯤 보이면 실행
         item.classList.add('active');
       } else {
         item.classList.remove('active');
